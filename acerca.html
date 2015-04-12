@@ -1,0 +1,84 @@
+	<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="imagenes/logo_mini.png">
+	<link rel="stylesheet" href="estilos/global.css">
+	<link rel="stylesheet" href="estilos/fontello.css">
+	<link rel="stylesheet" href="estilos/fontello-codes.css">
+	<link rel="stylesheet" href="estilos/fontello-embedded.css">
+	<link rel="stylesheet" href="estilos/fontello-ie7.css">
+	<link rel="stylesheet" href="estilos/fontello-ie7-codes.css">
+	<link rel="stylesheet" href="estilos/fontello.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<title>Acerca - Ruteando</title>
+</head>
+<body>
+	<!-- CABECERA -->
+	<header>
+		<a href="index.html"><img src="imagenes/logo.png" alt="Excursiones PEPE" ></a>
+		<nav>
+			<a href="index.html">Índice<span class="icon-home"></span></a>
+			<a href="login.html">Login<span class="icon-export"></span></a>
+			<a href="registro.html">Registro<span class="icon-edit"></span></a>
+			<a href="rutas.html">Rutas<span class="icon-paper-plane"></span></a>
+			<a href="nueva_ruta.html">Añadir ruta<span class="icon-plus"></span></a>
+		</nav>
+	</header>
+	
+	<!-- CONTENIDO -->
+	<main>
+		<h3>Esta web se corresponde con la prática 1 de la asignatura PH2, que pertenece al 3er curso de la titulación de Ingeniería Multimedia</h3>
+		<h3>Autores:</h3>
+		<ul>
+			<li>
+				<h3>Daniel Sánchez García</h3>
+				<ul>
+					<li>DNI: 48336680H</li>
+					<li>Grupo de prácticas: Jueves 9:00-11:00</li>
+					<li>Email: dsg @alu.ua.es</li>
+				</ul>
+
+			</li>
+			<li>
+				<h3>Enrique Santisteban Mojares</h3>
+				<ul>
+					<li>DNI: 48766123M</li>
+					<li>Grupo de prácticas: Jueves 9:00-11:00</li>
+					<li>Email: esm63@alu.ua.es</li>
+				</ul>
+			</li>
+		</ul>
+		<section class="acerca">
+			<h3>Partes realizadas y no realizadas:</h3>
+			<ul>
+				<li>
+					La práctica ha sido realizada por completo, a excepción de las partes que no se podían realizar con la tecnología HTML5 y CSS3 únicamente: Subida de imágenes al crear una nueva ruta, envío de formularios, etc.
+				</li>
+				<li>
+					El diseño responsive se ha realizado mediante 4 estilos distintos según la anchura de píxeles, realizándose primero el diseño de pantallas para móviles y posteriormente los demás.
+				</li>
+			</ul>
+		</section>
+		<section class="acerca">
+			<h3>Incompatibilidades:</h3>
+			<ul>
+				<li>
+					El input de tipo date no funciona en el navegador firefox. Se ha solucionado añadiendo el atributo pattern="\d{1,2}/\d{1,2}/\d{4}" a dichos inputs, así como un mensaje que le indica al usuario que tiene que emplear el formato
+					dd/mm/aaaa para introducir las fechas. No obstante, en el validador esta solución da error, aunque en la práctica funcione. El motivo es que el atributo pattern no está soportado por el input date, pero como firefox trata el input date como input text, el atributo pattern sí que sirve.
+				</li>
+				<li>
+					El input de tipo datalist daba problemas a la hora de realizar la validación, por lo que ha sido sustituido por un input de tipo select.
+				</li>
+				<li>
+					En opera las imágenes no aparecen, sólo aparece el figurecaption como si constantemente hubiera un cursor sobre todas las imágenes. Además, en alguna ocasión se ha apreciado que los iconos no aparecían correctamente, sino como carácteres del alfabeto chino.
+				</li>
+			</ul>
+		</section>
+	</main>
+	<!-- PIE DE PAGINA -->
+	<footer>
+		<p>Daniel Sánchez y Enrique Santisteban - PH2 - &copy;Ruteando 2015 - <a href="acerca.html">Acerca</a></p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="imagenes/logo_mini.png">
+	<link rel="stylesheet" href="estilos/global.css">
+	<link rel="stylesheet" href="estilos/fontello.css">
+	<link rel="stylesheet" href="estilos/fontello-codes.css">
+	<link rel="stylesheet" href="estilos/fontello-embedded.css">
+	<link rel="stylesheet" href="estilos/fontello-ie7.css">
+	<link rel="stylesheet" href="estilos/fontello-ie7-codes.css">
+	<link rel="stylesheet" href="estilos/fontello.css">
+	<link rel="stylesheet" href="estilos/star_rate.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<script src="scripts/cargarRutas.js"> </script>
+	<script src="scripts/funcionesGenerales.js"> </script>
+	<script src="scripts/cargarComentarios.js"> </script>
+	<script type="text/javascript" src="scripts/global.js"></script>
+	<title>Inicio-Ruteando</title>
+</head>
+<body onload="devuelveRutas()">
+	<!-- CABECERA -->
+	<header>
+		<a href="index.html"><img src="imagenes/logo.png" alt="Ruteando"></a>
+		<nav id="nav">
+			<a href="index.html">Índice<span class="icon-home"></span></a>
+			<a class="noLog" href="login.html">Login<span class="icon-export"></span></a>
+			<a class="noLog" href="registro.html">Registro<span class="icon-edit"></span></a>
+			<a href="rutas.html">Rutas<span class="icon-paper-plane"></span></a>
+			<a class="log" href="nueva_ruta.html">Añadir ruta<span class="icon-plus"></span></a>
+		</nav>
+	</header>
+	
+	<!-- CONTENIDO -->
+	<main>		
+		<button class="submit" onclick="devuelveRutas()">Actualizar rutas</button>
+		<section id="rutas">	
+					
+		</section>
+		
+		<button  class="submit" onclick="devuelveComentarios()">Actualizar comentarios</button>
+		<section id="comentarios">
+			
+		</section>
+		
+	</main>
+	<!-- PIE DE PAGINA -->
+	<footer>
+		<p>Daniel Sánchez y Enrique Santisteban - PH2 - &copy;Ruteando 2015 - <a href="acerca.html">Acerca</a></p>
+	</footer>
+</body>
+</html>

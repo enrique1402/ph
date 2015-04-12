@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="imagenes/logo_mini.png">
+	<link rel="stylesheet" href="estilos/star_rate.css">
+	<link rel="stylesheet" href="estilos/global.css">
+	<link rel="stylesheet" href="estilos/fontello.css">
+	<link rel="stylesheet" href="estilos/fontello-codes.css">
+	<link rel="stylesheet" href="estilos/fontello-embedded.css">
+	<link rel="stylesheet" href="estilos/fontello-ie7.css">
+	<link rel="stylesheet" href="estilos/fontello-ie7-codes.css">
+	<link rel="stylesheet" href="estilos/fontello.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<title>Rutas - Ruteando</title>
+</head>
+<body>
+	<!-- CABECERA -->
+	<header>
+		<a href="index.html"><img src="imagenes/logo.png" alt="Ruteando"></a>
+		<nav>
+			<a href="index.html">Índice<span class="icon-home"></span></a>
+			<a href="login.html">Login<span class="icon-export"></span></a>
+			<a href="registro.html">Registro<span class="icon-edit"></span></a>
+			<a href="rutas.html">Rutas<span class="icon-paper-plane"></span></a>
+			<a href="nueva_ruta.html">Añadir ruta<span class="icon-plus"></span></a>
+		</nav>
+	</header>	
+	<!-- CONTENIDO -->
+	<main>
+		<section id="busquedarutas">
+			<form class="contact_form" action="index.html" method="POST">
+				<fieldset>
+					<legend>Búsqueda</legend>
+				<ul>
+					<li>
+						<label for="buscar">Buscar: </label>
+							<input id="buscar" type="text" required autofocus>					
+					</li>
+					<li>
+						<label for="lista">Buscar por:</label>
+							<select id="lista">
+					        	<option value="Título">Título</option>
+						       	<option value="Recorrido">Recorrido</option>
+						        <option value="Descripción">Descripción</option>
+					            <option value="Fecha">Fecha</option>
+					            <option value="Dificultad">Dificultad</option>
+					            <option value="Distancia">Distancia</option>
+					            <option value="Fecha">Fecha</option>
+				       		</select>				 
+					</li>
+					<li>
+						<label for="min">Mínima</label>
+							<input id="min" type="radio" name="rango" value="minima" checked>
+					</li>
+					<li>
+						<label for="max">Máxima</label>
+							<input id="max" type="radio" name="rango" value="maxima" checked>
+					</li>
+					<li>					
+						<span class="fechas">Desde:</span><input type="date" pattern="\d{1,2}/\d{1,2}/\d{4}" name="desde">
+						<span class="form_hint">Introduce una fecha con el formato dd/mm/aaaa</span>
+						<span class="fechas">Hasta:</span><input type="date" pattern="\d{1,2}/\d{1,2}/\d{4}" name="hasta">
+						<span class="form_hint">Introduce una fecha con el formato dd/mm/aaaa</span>
+					</li>
+					<li>	
+						<button class="submit" type="submit" value="Entrar">Entrar</button>
+					</li>
+				</ul>
+				</fieldset>
+			</form>
+		</section>
+		<section id="resultados">
+			<h2 class="titulo">Resultados</h2>
+			<a href="ruta.html">
+				<figure>
+					<img src="imagenes/ruta1.jpg" alt="Imagen de la ruta 1">
+					<figcaption>
+							<h2>Titulo ruta 1</h2>
+							<ul>
+								<li>dd/mm/aa</li>
+								<li>20 Km</li>
+								<li>
+									<span class="icon-star" data-value="1" title="1 estrellas"></span>
+									<span class="icon-star" data-value="2" title="2 estrellas"></span>
+									<span class="icon-star" data-value="3" title="3 estrellas"></span>
+									<span class="icon-star" data-value="4" title="4 estrellas"></span>
+									<span class="icon-star" data-value="5" title="5 estrellas"></span>
+								</li>
+								<li>5 fotos disponibles</li>
+								<li>13 comentarios</li>
+							</ul>
+						</figcaption>
+				</figure>
+			</a>
+			<a href="ruta.html">
+				<figure>
+					<img src="imagenes/ruta2.jpg" alt="Imagen de la ruta 2">
+					<figcaption>
+							<h2>Titulo ruta 2</h2>
+							<ul>
+								<li>dd/mm/aa</li>
+								<li>20 Km</li>
+								<li>
+									<span class="icon-star" data-value="1" title="1 estrellas"></span>
+									<span class="icon-star" data-value="2" title="2 estrellas"></span>
+									<span class="icon-star" data-value="3" title="3 estrellas"></span>
+									<span class="icon-star" data-value="4" title="4 estrellas"></span>
+									<span class="icon-star" data-value="5" title="5 estrellas"></span>
+								</li>
+								<li>5 fotos disponibles</li>
+								<li>13 comentarios</li>
+							</ul>
+						</figcaption>
+				</figure>
+			</a>
+			<a href="ruta.html">
+				<figure>
+					<img src="imagenes/ruta3.jpg" alt="Imagen de la ruta 3">
+					<figcaption>
+							<h2>Titulo ruta 3</h2>
+							<ul>
+								<li>dd/mm/aa</li>
+								<li>20 Km</li>
+								<li>
+									<span class="icon-star" data-value="1" title="1 estrellas"></span>
+									<span class="icon-star" data-value="2" title="2 estrellas"></span>
+									<span class="icon-star" data-value="3" title="3 estrellas"></span>
+									<span class="icon-star" data-value="4" title="4 estrellas"></span>
+									<span class="icon-star" data-value="5" title="5 estrellas"></span>
+								</li>
+								<li>5 fotos disponibles</li>
+								<li>13 comentarios</li>
+							</ul>
+						</figcaption>
+				</figure>
+			</a>
+			<a href="ruta.html">
+				<figure>
+					<img src="imagenes/ruta4.jpg" alt="Imagen de la ruta 4">
+					<figcaption>
+							<h2>Titulo ruta 4</h2>
+							<ul>
+								<li>dd/mm/aa</li>
+								<li>20 Km</li>
+								<li>
+									<span class="icon-star" data-value="1" title="1 estrellas"></span>
+									<span class="icon-star" data-value="2" title="2 estrellas"></span>
+									<span class="icon-star" data-value="3" title="3 estrellas"></span>
+									<span class="icon-star" data-value="4" title="4 estrellas"></span>
+									<span class="icon-star" data-value="5" title="5 estrellas"></span>
+								</li>
+								<li>5 fotos disponibles</li>
+								<li>13 comentarios</li>
+							</ul>
+						</figcaption>
+				</figure>
+			</a>
+			<a href="ruta.html">
+				<figure>
+					<img src="imagenes/ruta5.jpg" alt="Imagen de la ruta 5">
+					<figcaption>
+							<h2>Titulo ruta 5</h2>
+							<ul>
+								<li>dd/mm/aa</li>
+								<li>20 Km</li>
+								<li>
+									<span class="icon-star" data-value="1" title="1 estrellas"></span>
+									<span class="icon-star" data-value="2" title="2 estrellas"></span>
+									<span class="icon-star" data-value="3" title="3 estrellas"></span>
+									<span class="icon-star" data-value="4" title="4 estrellas"></span>
+									<span class="icon-star" data-value="5" title="5 estrellas"></span>
+								</li>
+								<li>5 fotos disponibles</li>
+								<li>13 comentarios</li>
+							</ul>
+						</figcaption>
+				</figure>
+			</a>
+			<a href="ruta.html">
+				<figure>
+					<img src="imagenes/ruta6.jpg" alt="Imagen de la ruta 6">
+					<figcaption>
+							<h2>Titulo ruta 6</h2>
+							<ul>
+								<li>dd/mm/aa</li>
+								<li>20 Km</li>
+								<li>
+									<span class="icon-star" data-value="1" title="1 estrellas"></span>
+									<span class="icon-star" data-value="2" title="2 estrellas"></span>
+									<span class="icon-star" data-value="3" title="3 estrellas"></span>
+									<span class="icon-star" data-value="4" title="4 estrellas"></span>
+									<span class="icon-star" data-value="5" title="5 estrellas"></span>
+								</li>
+								<li>5 fotos disponibles</li>
+								<li>13 comentarios</li>
+							</ul>
+						</figcaption>
+				</figure>
+			</a>
+			<a href="ruta.html">
+				<figure>
+					<img src="imagenes/ruta7.jpg" alt="Imagen de la ruta 7">
+					<figcaption>
+							<h2>Titulo ruta 7</h2>
+							<ul>
+								<li>dd/mm/aa</li>
+								<li>20 Km</li>
+								<li>
+									<span class="icon-star" data-value="1" title="1 estrellas"></span>
+									<span class="icon-star" data-value="2" title="2 estrellas"></span>
+									<span class="icon-star" data-value="3" title="3 estrellas"></span>
+									<span class="icon-star" data-value="4" title="4 estrellas"></span>
+									<span class="icon-star" data-value="5" title="5 estrellas"></span>
+								</li>
+								<li>5 fotos disponibles</li>
+								<li>13 comentarios</li>
+							</ul>
+						</figcaption>
+				</figure>
+			</a>
+			<a href="ruta.html">
+				<figure>
+					<img src="imagenes/ruta8.jpg" alt="Imagen de la ruta 8">
+					<figcaption>
+							<h2>Titulo ruta 8</h2>
+							<ul>
+								<li>dd/mm/aa</li>
+								<li>20 Km</li>
+								<li>
+									<span class="icon-star" data-value="1" title="1 estrellas"></span>
+									<span class="icon-star" data-value="2" title="2 estrellas"></span>
+									<span class="icon-star" data-value="3" title="3 estrellas"></span>
+									<span class="icon-star" data-value="4" title="4 estrellas"></span>
+									<span class="icon-star" data-value="5" title="5 estrellas"></span>
+								</li>
+								<li>5 fotos disponibles</li>
+								<li>13 comentarios</li>
+							</ul>
+						</figcaption>
+				</figure>
+			</a>
+			<a href="ruta.html">
+				<figure>
+					<img src="imagenes/ruta9.jpg" alt="Imagen de la ruta 9">
+					<figcaption>
+							<h2>Titulo ruta 9</h2>
+							<ul>
+								<li>dd/mm/aa</li>
+								<li>20 Km</li>
+								<li>
+									<span class="icon-star" data-value="1" title="1 estrellas"></span>
+									<span class="icon-star" data-value="2" title="2 estrellas"></span>
+									<span class="icon-star" data-value="3" title="3 estrellas"></span>
+									<span class="icon-star" data-value="4" title="4 estrellas"></span>
+									<span class="icon-star" data-value="5" title="5 estrellas"></span>
+								</li>
+								<li>5 fotos disponibles</li>
+								<li>13 comentarios</li>
+							</ul>
+						</figcaption>
+				</figure>
+			</a>
+			<a href="ruta.html">
+				<figure>
+					<img src="imagenes/ruta10.jpg" alt="Imagen de la ruta 10">
+					<figcaption>
+							<h2>Titulo ruta 10</h2>
+							<ul>
+								<li>dd/mm/aa</li>
+								<li>20 Km</li>
+								<li>
+									<span class="icon-star" data-value="1" title="1 estrellas"></span>
+									<span class="icon-star" data-value="2" title="2 estrellas"></span>
+									<span class="icon-star" data-value="3" title="3 estrellas"></span>
+									<span class="icon-star" data-value="4" title="4 estrellas"></span>
+									<span class="icon-star" data-value="5" title="5 estrellas"></span>
+								</li>
+								<li>5 fotos disponibles</li>
+								<li>13 comentarios</li>
+							</ul>
+						</figcaption>
+				</figure>
+			</a>
+		</section>
+	</main>
+	<footer>
+		<p>Daniel Sánchez y Enrique Santisteban - PH2 - &copy;Ruteando 2015 - <a href="acerca.html">Acerca</a></p>
+	</footer>
+</body>
+</html>
