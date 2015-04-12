@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">	
+	<link rel="shortcut icon" href="imagenes/logo_mini.png">
+	<link rel="stylesheet" href="estilos/formulario.css">
+	<link rel="stylesheet" href="estilos/star_rate.css">
+	<link rel="stylesheet" href="estilos/global.css">
+	<link rel="stylesheet" href="estilos/fontello.css">
+	<link rel="stylesheet" href="estilos/fontello-codes.css">
+	<link rel="stylesheet" href="estilos/fontello-embedded.css">
+	<link rel="stylesheet" href="estilos/fontello-ie7.css">
+	<link rel="stylesheet" href="estilos/fontello-ie7-codes.css">
+	<link rel="stylesheet" href="estilos/fontello.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<title>Registro - Ruteando</title>
+</head>
+<body>
+	<!-- CABECERA -->
+	<header>
+		<a href="index.html"><img src="imagenes/logo.png" alt="Ruteando"></a>
+		<nav>
+			<a href="index.html">Índice<span class="icon-home"></span></a>
+			<a href="login.html">Login<span class="icon-export"></span></a>
+			<a href="registro.html">Registro<span class="icon-edit"></span></a>
+			<a href="rutas.html">Rutas<span class="icon-paper-plane"></span></a>
+			<a href="nueva_ruta.html">Añadir ruta<span class="icon-plus"></span></a>
+		</nav>
+	</header>		
+	<!-- CONTENIDO -->
+	<main>
+		<form  class="contact_form" action="index.html" method="POST">
+	       	<fieldset>
+	        	<legend>Formulario de registro</legend>
+	            <ul>
+	                <li>
+	                    <span class="required_notification">Todos los datos son requeridos</span>
+	                </li>
+	                <li>
+	                    <label for="login">Login:</label>
+	                    <input id="login" type="text" pattern="\D+[a-zA-Z0-9-]+" placeholder="Enrique1402" required autofocus >
+	                    <span class="form_hint">Utiliza sólo letras, números y el carácter -</span>
+	                </li>                
+	                <li>
+	                    <label for="pass1">Contraseña:</label>
+	                    <input id="pass1" type="password" pattern="[a-zA-z0-9-_]+" required >
+	                    <span class="form_hint">Utiliza sólo letras, números y los carácteres '_' y '-'</span>
+	                </li>
+	                <li>
+	                    <label for="pass2">Repite la contraseña:</label>
+	                    <input id="pass2" type="password" required >                    
+	                </li>
+	                <li>
+	                    <label for="name">Nombre completo:</label>
+	                    <input id="name" type="text" required >                    
+	                </li>
+	                <li>
+	                    <label for="email">Email:</label>
+	                    <input id="email" name="email" type="email" placeholder="name@something.com" required>
+	                </li>
+	                <li>
+	                    <button class="submit" type="submit">Enviar mensaje</button>
+	                </li>
+	            </ul>
+	        </fieldset>
+	    </form>
+	</main>
+	<!-- PIE DE PAGINA -->
+	<footer>
+		<p>Daniel Sánchez y Enrique Santisteban - PH2 - &copy;Ruteando 2015 - <a href="acerca.html">Acerca</a></p>
+	</footer>
+</body>
+</html>

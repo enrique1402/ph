@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="imagenes/logo_mini.png">
+	<link rel="stylesheet" href="estilos/star_rate.css">
+	<link rel="stylesheet" href="estilos/global.css">
+	<link rel="stylesheet" href="estilos/fontello.css">
+	<link rel="stylesheet" href="estilos/fontello-codes.css">
+	<link rel="stylesheet" href="estilos/fontello-embedded.css">
+	<link rel="stylesheet" href="estilos/fontello-ie7.css">
+	<link rel="stylesheet" href="estilos/fontello-ie7-codes.css">
+	<link rel="stylesheet" href="estilos/fontello.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<title>Ruta - Ruteando</title>
+</head>
+<body>
+	<!-- CABECERA -->
+	<header>
+		<a href="index.html"><img src="imagenes/logo.png" alt="Ruteando"></a>
+		<nav>
+			<a href="index.html">Índice<span class="icon-home"></span></a>
+			<a href="login.html">Login<span class="icon-export"></span></a>
+			<a href="registro.html">Registro<span class="icon-edit"></span></a>
+			<a href="rutas.html">Rutas<span class="icon-paper-plane"></span></a>
+			<a href="nueva_ruta.html">Añadir ruta<span class="icon-plus"></span></a>
+		</nav>
+	</header>	
+	<!-- CONTENIDO -->
+	<main>
+		<h2 class="titulo">Ruta</h2>
+		
+		<section class="texto_ruta">
+			<article class="descripcionruta">
+				<h3>Descripción</h3>
+				<ul>
+					<li>Título</li>
+					<li>Fecha</li>
+					<li>Recorrido</li>
+					<li>Descripción</li>
+					<li>Distancia</li>
+					<li>Dificultad
+						<span class="no_wrap">
+						<span class="icon-star" data-value="1" title="1 estrellas"></span>
+						<span class="icon-star" data-value="2" title="2 estrellas"></span>
+						<span class="icon-star" data-value="3" title="3 estrellas"></span>
+						<span class="icon-star" data-value="4" title="4 estrellas"></span>
+						<span class="icon-star" data-value="5" title="5 estrellas"></span>						
+						</span>
+					</li>
+				</ul>
+			</article>
+
+			<article class="comentarios">
+				<h3>Comentarios</h3>
+				<article>
+					<ul>
+						<li class="no_style">Contenido del comentario 1</li>
+						<li>Autor: </li>
+						<li>Fecha: dd/mm/aaaa a las hh:mm</li>
+						<li>Título</li>
+					</ul>
+				</article>
+				<article>
+					<ul>
+						<li class="no_style">Contenido del comentario 2</li>
+						<li>Autor: </li>
+						<li>Fecha: dd/mm/aaaa a las hh:mm</li>
+						<li>Título: </li>
+					</ul>
+				</article>
+				<article>
+					<ul>
+						<li class="no_style">Contenido del comentario 3</li>
+						<li>Autor: </li>
+						<li>Fecha: dd/mm/aaaa a las hh:mm</li>
+						<li>Título: </li>
+					</ul>
+				</article>
+				<h3>Nuevo comentario: </h3>
+				<form action="ruta.hmtl">
+					<label for="titulo">Título: 
+						<input type="text" id="titulo" name="titulo" maxlength="50">
+					</label>
+					<label for="texto">Texto: 
+						<textarea id="texto" name="comentarios" cols="30" rows="5"></textarea>
+					</label>
+					<input type="hidden" value="login">
+				</form>
+			</article>
+		</section>
+
+		<section class="miniaturasimagenes">
+			<h3>Miniaturas</h3>
+			<figure id="miniatura1">
+				<img class="miniatura" src="imagenes/ruta1.jpg" alt="Imagen 1 de la ruta">
+				<figcaption>
+					<h2>Descripción miniatura 1</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur tenetur tempora ex sequi officia dolorem.</p>
+				</figcaption>
+			</figure>
+			<figure id="miniatura2">
+				<img class="miniatura" src="imagenes/ruta2.jpg" alt="Imagen 2 de la ruta">
+				<figcaption>
+					<h2>Descripción miniatura 1</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur tenetur tempora ex sequi officia dolorem.</p>
+				</figcaption>
+			</figure>
+			<figure id="miniatura3">
+				<img class="miniatura" src="imagenes/ruta3.jpg" alt="Imagen 3 de la ruta">
+				<figcaption>
+					<h2>Descripción miniatura 1</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur tenetur tempora ex sequi officia dolorem.</p>
+				</figcaption>
+			</figure>
+		</section>
+	</main>
+	<footer>
+		<p>Daniel Sánchez y Enrique Santisteban - PH2 - &copy;Ruteando 2015 - <a href="acerca.html">Acerca</a></p>
+	</footer>
+</body>
+</html>

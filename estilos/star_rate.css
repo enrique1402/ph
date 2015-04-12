@@ -1,0 +1,33 @@
+/*****************VALORACION DE ESTRELLAS*********************/
+.starRating {
+	/* Espacio entre los inline-block (los hijos, los `a`) 
+	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+	font-size: 0;
+	/* Podríamos quitarlo, 
+		pero de esta manera (siempre que no le demos padding), 
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: inline-block;
+	width: 230px;
+}
+.starRating a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 30px;
+	
+	color: #888;
+}
+
+.starRating:hover a {
+	color: #CC0;	
+}
+/***Se colorean de amarillo todos los elementos que preceden al a:hover***/
+.starRating > a:hover ~ a {
+	color: #888;
+}
+@media screen and (max-width: 550px) {
+	.starRating a{
+		font-size: 20px; /*Se reduce el tamanyo de las estrellas en el mobile design*/
+	}
+}

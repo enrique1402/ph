@@ -1,0 +1,286 @@
+@import url(formulario.css);
+@import url(flip.css);
+
+a{
+	color: #483715;
+}
+	a:hover{
+		font-weight: bold;
+	}
+body{
+	/*background-color: white;*/
+	font-family: 'Oswald', sans-serif;
+	color: #483715;
+	background-image: url("../patrones/background.jpg");
+	background-attachment: fixed;
+   	background-size: cover;
+}	
+footer{
+	/*border: #483715 2px solid;*/
+	/*background-color: #9EDAD9;*/
+	margin-top: 5%;
+	font-size: 90%;
+	margin-bottom: 5%;
+	text-align: center;
+	/*margin-right: 5%;*/
+}
+header{
+	/*background-color: #A8D0C7;*/
+	/*background-color: #9EDAD9;*/
+	/*background-color: #91E8F7;*/
+	/*background-color: #02487B;*/
+	height: 5.5em;
+	/*margin: -1em;*/
+	margin-bottom: 1em;
+}
+	header a, article a{
+		text-decoration: none;
+	}
+	header img{
+			margin-top: 0.7em;
+			margin-left: 0.2em;
+			width: 6em;
+			float: left;
+	}
+label{
+	display: block;
+	width: 200px;
+}
+nav{
+		overflow: auto;
+		padding: 0.6em;
+}
+
+	img:hover{
+		opacity: 0.8;
+	}
+.acerca{
+	border: solid 2px;
+	margin-bottom: 5px;
+	padding:8px;
+}
+.comment{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.titulo{
+	margin-left: 5%;
+}
+
+.texto_ruta{
+	margin-left: 10%;
+	margin-right: 5%;
+	display:inline-block;
+	vertical-align:top;
+}
+#mini{
+	width: 100px;
+	height: 100px;
+	display: block;
+}
+ #mini:hover{
+ 	opacity: 1;
+ }
+@media screen and (min-width: 1301px) {
+		article h1{
+			display:inline-block;		
+		}
+		article h1+p{
+			display:inline-block;
+		}
+		main img{
+			width: 28em;
+			height: 20em;
+		}
+	nav{	
+		font-size: 1.4em;	
+		overflow: auto;
+		padding: 0.6em;
+	}
+
+		nav a{
+			float: left;
+			white-space: nowrap;
+			width: 18%;
+			text-align: center;
+			margin-top: 0.7em;
+		}
+	/*********************************COMENTARIOS**********************************/
+	#comentarios{
+		display:inline-block;
+		margin-top: 10px;
+		margin-left: 1%;
+		margin-right: 3%;
+		width: 90%;
+		/*border: #483715 2px solid;*/
+	}
+		#comentarios article{
+			display:inline-block;
+			margin-bottom: 3%;
+			margin-left: 50px;
+			width: 250px;
+			height: 30%;
+			/*border: #483715 2px solid;*/
+		}
+	/*********************************RUTAS**********************************/
+	#rutas{
+		display:inline-block;
+		vertical-align:top;
+		margin-top: 10px;
+		padding-left: 50px;
+		margin-right: 1%;
+		width: 90%;
+		height: 100%;
+	}
+		figure{
+			display:inline-block;
+		}
+	.miniaturasimagenes{
+		width: 30%;
+		display:inline-block;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1300px) {
+	figure{
+		display: inline-block;
+	}
+	main img{
+		width: 14em;
+		height: 10em;
+	}
+	nav {
+		font-size: 1.4em;
+		overflow: auto;
+		padding: 0.6em;
+	}
+		nav a{
+			float: left;
+			white-space: nowrap;
+			width: 18%;
+			text-align: center;
+			margin-top: 0.7em;
+		}
+	#comentarios{
+		padding: 5%;
+		margin-left: 10%;
+		margin-right: 5%;
+		width: 80%;
+		/*border: #483715 2px solid;*/
+	}
+		#comentarios article{
+			display:inline-block;
+			margin-bottom: 3%;
+			margin-left: 50px;
+			margin-right: 20px;
+			width: 300px;
+			height: 30%;
+		}
+	
+	#rutas{
+		margin-left: 5%;
+		margin-right: 5%;
+		padding: 2%;
+		padding-left: 10%;
+	}
+	.miniaturasimagenes{
+		width: 30%;
+		display:inline-block;
+	}
+	.texto_ruta{
+		width: 40%;
+		margin-right: 10%;
+ 	}
+}
+@media screen and (min-width: 551px) and (max-width: 800px){
+	figure{
+		display: inline-block;
+	}
+	main{
+		margin-left: 5%;
+	}
+	main img{
+		width: 26em;
+		height: 15em;
+	}
+	nav {
+		font-size: 1.1em;
+		overflow: auto;
+		padding: 0.6em;
+	}
+		nav a{
+			float: left;
+			white-space: nowrap;
+			width: 19%;
+			text-align: center;
+			margin-top: 1.1em;
+		}
+	#rutas figure{
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.texto_ruta{
+		margin:0px;
+ 	}
+	.miniaturasimagenes{
+		width: 100%;
+		display:inline-block;
+		margin-right: 0px;
+	}
+	#resultados figcaption,
+	#rutas figcaption{
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 550px) {
+		main img{	
+			width: 17.7em;
+			height: 13em;
+		}
+	nav{
+		overflow: auto;
+		padding: 0.6em;
+	}
+		nav a{
+			float: left;
+			white-space: nowrap;
+			width: 50%;
+			text-align: center;
+		}
+	#comentarios{
+		padding: 5%;
+		margin-right: 5%;
+		width: 80%;
+	}	
+	#rutas, #resultados{
+		margin-left: -0.5em;
+	}
+	#resultados figure{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		/*margin-left: -0.05em;*/
+	}
+	#rutas figure{
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	h2{
+		margin-left: 2em;
+	}
+	.miniaturasimagenes figure{
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.no_wrap{
+		white-space: nowrap;
+	}
+	.texto_ruta{
+		width: 80%;
+	}
+}
